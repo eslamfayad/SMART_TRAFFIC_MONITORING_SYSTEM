@@ -14,7 +14,7 @@ EM009
 
 Eslam Fayad (eslam)
 
-Mar 31, 2022 1050 views
+
 
 Our project is a smart system to track traffic in city streets to track traffic densities, and it can also detect driving violations.
 
@@ -336,12 +336,6 @@ EM009 GIT HUB LINK
 
 https://github.com/eslamfayad/SMART_TRAFFIC_MONITORING_SYSTEM
 
-0 Comments
-
-
-Please login to post a comment.
-
-Connecting the Edge for a Sustainable Future.
 
 FAQ
 
