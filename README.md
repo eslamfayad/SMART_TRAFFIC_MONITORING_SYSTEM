@@ -28,7 +28,7 @@ Nowadays, development is synonymous with construction of infrastructure. Such ro
 
 2. Block Diagram
  
-
+http://www.innovatefpga.com/attachment/member/2021/EM009-DAC5A74A434F094A/image/Screenshot%202022-04-03%20135449.png
 
 
 3. Expected sustainability results, projected resource savings
