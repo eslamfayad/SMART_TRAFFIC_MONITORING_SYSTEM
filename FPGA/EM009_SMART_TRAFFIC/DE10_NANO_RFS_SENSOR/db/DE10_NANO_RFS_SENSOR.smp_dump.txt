@@ -1,0 +1,36 @@
+
+State Machine - |DE10_NANO_RFS_SENSOR|nios_qsys:u0|i2c_opencores:rh_temp_i2c_opencores|i2c_master_top:i2c_master_top_inst|i2c_master_byte_ctrl:byte_controller|c_state
+Name c_state.ST_IDLE c_state.ST_STOP c_state.ST_ACK c_state.ST_WRITE c_state.ST_READ c_state.ST_START 
+c_state.ST_IDLE 0 0 0 0 0 0 
+c_state.ST_START 1 0 0 0 0 1 
+c_state.ST_READ 1 0 0 0 1 0 
+c_state.ST_WRITE 1 0 0 1 0 0 
+c_state.ST_ACK 1 0 1 0 0 0 
+c_state.ST_STOP 1 1 0 0 0 0 
+
+State Machine - |DE10_NANO_RFS_SENSOR|nios_qsys:u0|nios_qsys_nios2_gen2:nios2_gen2|nios_qsys_nios2_gen2_cpu:cpu|nios_qsys_nios2_gen2_cpu_nios2_oci:the_nios_qsys_nios2_gen2_cpu_nios2_oci|nios_qsys_nios2_gen2_cpu_debug_slave_wrapper:the_nios_qsys_nios2_gen2_cpu_debug_slave_wrapper|nios_qsys_nios2_gen2_cpu_debug_slave_tck:the_nios_qsys_nios2_gen2_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |DE10_NANO_RFS_SENSOR|nios_qsys:u0|i2c_opencores:mpu_i2c_opencores|i2c_master_top:i2c_master_top_inst|i2c_master_byte_ctrl:byte_controller|c_state
+Name c_state.ST_IDLE c_state.ST_STOP c_state.ST_ACK c_state.ST_WRITE c_state.ST_READ c_state.ST_START 
+c_state.ST_IDLE 0 0 0 0 0 0 
+c_state.ST_START 1 0 0 0 0 1 
+c_state.ST_READ 1 0 0 0 1 0 
+c_state.ST_WRITE 1 0 0 1 0 0 
+c_state.ST_ACK 1 0 1 0 0 0 
+c_state.ST_STOP 1 1 0 0 0 0 
+
+State Machine - |DE10_NANO_RFS_SENSOR|nios_qsys:u0|i2c_opencores:light_i2c_opencores|i2c_master_top:i2c_master_top_inst|i2c_master_byte_ctrl:byte_controller|c_state
+Name c_state.ST_IDLE c_state.ST_STOP c_state.ST_ACK c_state.ST_WRITE c_state.ST_READ c_state.ST_START 
+c_state.ST_IDLE 0 0 0 0 0 0 
+c_state.ST_START 1 0 0 0 0 1 
+c_state.ST_READ 1 0 0 0 1 0 
+c_state.ST_WRITE 1 0 0 1 0 0 
+c_state.ST_ACK 1 0 1 0 0 0 
+c_state.ST_STOP 1 1 0 0 0 0 

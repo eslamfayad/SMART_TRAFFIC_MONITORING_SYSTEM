@@ -1,0 +1,30 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial.qsys --block-symbol-file --output-directory=D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading EM009_SMART_TRAFFIC/Radar_Serial.qsys
+Progress: Reading input file
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial.qsys --synthesis=VHDL --output-directory=D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial\synthesis --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading EM009_SMART_TRAFFIC/Radar_Serial.qsys
+Progress: Reading input file
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Radar_Serial: Generating Radar_Serial "Radar_Serial" for QUARTUS_SYNTH
+Info: rs232_0: Starting Generation of RS232 UART
+Error: rs232_0: The input clock frequency must be known at generation time.
+Info: rs232_0: "Radar_Serial" instantiated altera_up_avalon_rs232 "rs232_0"
+Info: Radar_Serial: Done "Radar_Serial" with 2 modules, 6 files
+Error: qsys-generate failed with exit code 1: 1 Error, 0 Warnings
+Info: Finished: Create HDL design files for synthesis

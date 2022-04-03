@@ -1,0 +1,274 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/simulation/modelsim
+valtera_reset_controller
+Z1 !s110 1647697503
+!i10b 1
+!s100 z[H_hRO9gO=:^2E3_jWH03
+I8RZ_dQonzZ]Sk>6gIl1_X3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1647290107
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/altera_reset_controller.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/altera_reset_controller.v
+L0 42
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1647697503.000000
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/altera_reset_controller.v|
+!i113 1
+Z6 o-vlog01compat -work nios_qsys
+Z7 !s92 -vlog01compat -work nios_qsys +incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules
+Z8 tCvgOpt 0
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 oWLYmSO[EOX[G0PgQhZ2=0
+I1gIGM>_FQT<2Xf=cRf8AV0
+R2
+R0
+R3
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/altera_reset_synchronizer.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/altera_reset_synchronizer.v
+L0 24
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 1
+R6
+R7
+R8
+vi2c_opencores
+Z9 !s110 1647697504
+!i10b 1
+!s100 G60L:^odfP5]fLRU^J7M`1
+I=XmAhi]`:Uo3Qg6zCh?aA3
+R2
+R0
+Z10 w1647290090
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/i2c_opencores.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/i2c_opencores.v
+L0 7
+R4
+r1
+!s85 0
+31
+Z11 !s108 1647697504.000000
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/i2c_opencores.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/i2c_opencores.v|
+!i113 1
+R6
+R7
+R8
+vnios_qsys
+R1
+!i10b 1
+!s100 cGW4R6MCXf9hg?Knm5OMU3
+I=^ooni>]QUBKecPA@_7KS3
+R2
+R0
+R10
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/nios_qsys.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/nios_qsys.v
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/nios_qsys.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/nios_qsys.v|
+!i113 1
+R6
+!s92 -vlog01compat -work nios_qsys +incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis
+R8
+vnios_qsys_light_int
+R9
+!i10b 1
+!s100 j3k>zDUjB18SH6^5oQQB`1
+I8EBH7cFAIZb[HBG[z;VUW2
+R2
+R0
+R10
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_light_int.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_light_int.v
+Z12 L0 21
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_light_int.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_light_int.v|
+!i113 1
+R6
+R7
+R8
+vnios_qsys_mm_interconnect_0
+R1
+!i10b 1
+!s100 ;Gm3U`=eTTjE`h^=:<26h3
+Im5WPG]QHB9cH;A0V`>4_I1
+R2
+R0
+R3
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_mm_interconnect_0.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_mm_interconnect_0.v
+L0 9
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_mm_interconnect_0.v|
+!i113 1
+R6
+R7
+R8
+vnios_qsys_mm_interconnect_0_avalon_st_adapter
+R9
+!i10b 1
+!s100 ok[bm;a2ZI@Acl1BaQJK]0
+I0H?NMTmPYKA_f5NCZ[mCS2
+R2
+R0
+w1647290115
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_mm_interconnect_0_avalon_st_adapter.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_mm_interconnect_0_avalon_st_adapter.v
+L0 9
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_mm_interconnect_0_avalon_st_adapter.v|
+!i113 1
+R6
+R7
+R8
+vnios_qsys_nios2_gen2
+R9
+!i10b 1
+!s100 o1LDL[?CTcSh@AZ5YRf:B3
+IVUJ3CWf8[O5^4W@@FL<5m0
+R2
+R0
+Z13 w1647290091
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_nios2_gen2.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_nios2_gen2.v
+L0 9
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_nios2_gen2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_nios2_gen2.v|
+!i113 1
+R6
+R7
+R8
+vnios_qsys_onchip_memory2
+R9
+!i10b 1
+!s100 UeXi3oEEL9E5@R`UlOAIV0
+I1IHV4=h;QV;P3k6nLoJcH3
+R2
+R0
+R13
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_onchip_memory2.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_onchip_memory2.v
+R12
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_onchip_memory2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_onchip_memory2.v|
+!i113 1
+R6
+R7
+R8
+vnios_qsys_rh_temp_drdy_n
+R9
+!i10b 1
+!s100 GCF_N01M:Y;MC53g[nF?[0
+I36M1?16[igAU]b6TDX5GX2
+R2
+R0
+Z14 w1647290092
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_rh_temp_drdy_n.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_rh_temp_drdy_n.v
+R12
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_rh_temp_drdy_n.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_rh_temp_drdy_n.v|
+!i113 1
+R6
+R7
+R8
+vnios_qsys_sysid_qsys
+R9
+!i10b 1
+!s100 :_In]cP0C78oFCM4mh2A61
+IjCFh32D59a[P=58Gk_n3K2
+R2
+R0
+R14
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_sysid_qsys.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_sysid_qsys.v
+L0 34
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_sysid_qsys.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_sysid_qsys.v|
+!i113 1
+R6
+R7
+R8
+vnios_qsys_timer
+R9
+!i10b 1
+!s100 9UYMND;LbOYFMl5ZX`IW12
+I8EP2661no<O]SJJiG4NOX3
+R2
+R0
+R14
+8D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_timer.v
+FD:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_timer.v
+R12
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_qsys|+incdir+D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules|D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/DE10_NANO_RFS_SENSOR/nios_qsys/synthesis/submodules/nios_qsys_timer.v|
+!i113 1
+R6
+R7
+R8

@@ -1,0 +1,56 @@
+library ieee;
+use ieee.std_logic_1164.all;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity ADC_Serial_Synch is
+  GENERIC(
+      slaves  : INTEGER := 1;   --number of spi slaves
+		F : INTEGER := 5;
+      N : INTEGER := 26);    --No of samples
+port (
+		 reset      : IN  STD_LOGIC;
+		 clk		   : IN	STD_LOGIC;
+		 Adc_0_iN   : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		 Adc_1_iN   : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		 Tx_ADC_0   : out STD_LOGIC_VECTOR(7 DOWNTO 0);
+		 Tx_ADC_1   : out STD_LOGIC_VECTOR(7 DOWNTO 0);
+		 uart_ready   : IN STD_LOGIC;
+		 uart_EN	   : out STD_LOGIC;
+		--clk_out	   : OUT	STD_LOGIC
+		);
+end;
+
+architecture behv of ADC_Serial_Synch is
+SIGNAL  spi_rx_data_0  : STD_LOGIC_VECTOR(23 DOWNTO 0);  --latest channel 0 data received
+  SIGNAL  spi_rx_data_1  : STD_LOGIC_VECTOR(23 DOWNTO 0);  --latest channel 1 data received
+  SIGNAL  spi_ena        : STD_LOGIC;                      --enable for spi bus
+  SIGNAL  spi_busy       : STD_LOGIC;                      --busy signal from spi bus
+  
+  
+  BEGIN
+  PROCESS(clk)
+    
+  BEGIN
+    IF(reset_n = '0') THEN                --asynchronous reset
+      count := 0;                           --clear clock counter
+      spi_ena <= '0';                       --clear enable signal for serial interface
+    ELSIF(clk'EVENT AND clk = '1') THEN   --rising system clock edge
+      IF(spi_busy = '0') THEN               --serial transaction with ADC not in process
+        IF(count < clk_freq/20-2) THEN        --wait at least 50ns between serial transactions
+          count := count + 1;                   --increment clock counter
+          spi_ena <= '0';                       --do not enable serial transaction
+        ELSE                                  --50ns wait time met
+          spi_ena <= '1';                       --enable next serial transaction to get data
+        END IF;
+      ELSE                                 --serial transaction with ADC in process
+        count := 0;                          --clear clock counter
+        spi_ena <= '0';                      --clear enable signal for next transaction
+      END IF;
+    END IF;
+  END PROCESS;
+
+  adc_0_data <= spi_rx_data_0(23 DOWNTO 8); --assign channel 0 ADC data bits to output        
+  adc_1_data <= spi_rx_data_1(23 DOWNTO 8); --assign channel 1 ADC data bits to output
+ 
+END behavior;

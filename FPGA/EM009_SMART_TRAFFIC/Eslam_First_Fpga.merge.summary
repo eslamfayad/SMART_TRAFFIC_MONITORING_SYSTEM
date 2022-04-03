@@ -1,0 +1,17 @@
+Partition Merge Status : Successful - Sun Mar 27 14:00:11 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : Eslam_First_Fpga
+Top-level Entity Name : Eslam_First_Fpga_HDL
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 10193
+Total pins : 235
+Total virtual pins : 0
+Total block memory bits : 1,150,046
+Total DSP Blocks : 3
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 1

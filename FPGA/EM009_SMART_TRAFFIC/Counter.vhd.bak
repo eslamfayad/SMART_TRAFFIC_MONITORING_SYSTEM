@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity fenping is
+	PORT(
+		 clk		: IN	STD_LOGIC;
+		clk_out	: OUT	STD_LOGIC
+		);
+end;
+
+architecture behv of fenping is
+	SIGNAL  SET 	:   STD_LOGIC;
+	SIGNAL 	QN		: 	STD_LOGIC_VECTOR(20 DOWNTO 0);	   
+BEGIN
+											
+		PROCESS (fin)				-- *** COUNTER
+		BEGIN
+				IF SET = '1' THEN
+					QN <= "011111111111111111111";		-- Set Counter	
+				ELSIF fin'event AND fin='1' THEN
+					QN <= QN - 1;		-- COUNTER - 1 
+				END IF;
+		END PROCESS;			
+
+		SET <= QN(20);
+		clk_out <= QN(19);				-- Result Output			
+
+end behv;

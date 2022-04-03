@@ -1,0 +1,22 @@
+transcript on
+if ![file isdirectory Eslam_First_Fpga_iputf_libs] {
+	file mkdir Eslam_First_Fpga_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+
+vcom "D:/INNOVATE_FPGA/FPGA_PROJECTS/FIRST_Fpga/pll_sim/pll.vho"
+
+vcom -93 -work work {D:/INNOVATE_FPGA/FPGA_PROJECTS/FIRST_Fpga/DAC AD5541A 16 bit Pmod Controller (VHDL)spi/spi_master.vhd}
+vcom -93 -work work {D:/INNOVATE_FPGA/FPGA_PROJECTS/FIRST_Fpga/DAC AD5541A 16 bit Pmod Controller (VHDL)spi/pmod_dac_ad5541a.vhd}
+vcom -93 -work work {D:/INNOVATE_FPGA/FPGA_PROJECTS/FIRST_Fpga/Counter.vhd}
+

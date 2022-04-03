@@ -1,0 +1,86 @@
+LIBRARY ieee  ; 
+LIBRARY std  ; 
+USE ieee.std_logic_1164.all  ; 
+USE ieee.std_logic_arith.all  ; 
+USE ieee.std_logic_textio.all  ; 
+USE ieee.STD_LOGIC_UNSIGNED.all  ; 
+USE ieee.std_logic_unsigned.all  ; 
+USE std.textio.all  ; 
+ENTITY eslam_test_b  IS 
+  GENERIC (
+    N  : INTEGER   := 26 ;  
+    F  : INTEGER   := 5 ;  
+    slaves  : INTEGER   := 1 ); 
+END ; 
+ 
+ARCHITECTURE eslam_test_b_arch OF eslam_test_b IS
+  SIGNAL clk_out   :  STD_LOGIC  ; 
+  SIGNAL count   :  std_logic_vector (23 downto 0)  ; 
+  SIGNAL dac_en   :  STD_LOGIC  ; 
+  SIGNAL dac_busy   :  STD_LOGIC  ; 
+  SIGNAL Amp   :  STD_LOGIC  ; 
+  SIGNAL clk   :  STD_LOGIC  ; 
+  SIGNAL reset   :  STD_LOGIC  ; 
+  COMPONENT Counter  
+    GENERIC ( 
+      N  : INTEGER ; 
+      F  : INTEGER ; 
+      slaves  : INTEGER  );  
+    PORT ( 
+      clk_out  : out STD_LOGIC ; 
+      count  : out std_logic_vector (23 downto 0) ; 
+      dac_en  : out STD_LOGIC ; 
+      dac_busy  : in STD_LOGIC ; 
+      Amp  : in STD_LOGIC ; 
+      clk  : in STD_LOGIC ; 
+      reset  : in STD_LOGIC ); 
+  END COMPONENT ; 
+BEGIN
+  DUT  : Counter  
+    GENERIC MAP ( 
+      N  => N  ,
+      F  => F  ,
+      slaves  => slaves   )
+    PORT MAP ( 
+      clk_out   => clk_out  ,
+      count   => count  ,
+      dac_en   => dac_en  ,
+      dac_busy   => dac_busy  ,
+      Amp   => Amp  ,
+      clk   => clk  ,
+      reset   => reset   ) ; 
+
+
+
+-- "Constant Pattern"
+-- Start Time = 0 ns, End Time = 1 us, Period = 0 ns
+  Process
+	Begin
+	 reset  <= '0'  ;
+	wait for 1 us ;
+-- dumped values till 1 us
+	wait;
+ End Process;
+
+
+-- "Clock Pattern" : dutyCycle = 50
+-- Start Time = 0 ns, End Time = 1 us, Period = 20 ns
+  Process
+	Begin
+	 clk  <= '0'  ;
+	wait for 10 ns ;
+-- 10 ns, single loop till start period.
+	for Z in 1 to 49
+	loop
+	    clk  <= '1'  ;
+	   wait for 10 ns ;
+	    clk  <= '0'  ;
+	   wait for 10 ns ;
+-- 990 ns, repeat pattern in loop.
+	end  loop;
+	 clk  <= '1'  ;
+	wait for 10 ns ;
+-- dumped values till 1 us
+	wait;
+ End Process;
+END;

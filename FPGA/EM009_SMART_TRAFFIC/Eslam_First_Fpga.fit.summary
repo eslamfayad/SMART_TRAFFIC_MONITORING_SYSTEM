@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sun Mar 27 14:04:28 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : Eslam_First_Fpga
+Top-level Entity Name : Eslam_First_Fpga_HDL
+Family : Cyclone V
+Device : 5CSEBA6U23I7
+Timing Models : Final
+Logic utilization (in ALMs) : 6,661 / 41,910 ( 16 % )
+Total registers : 10626
+Total pins : 235 / 314 ( 75 % )
+Total virtual pins : 0
+Total block memory bits : 1,150,046 / 5,662,720 ( 20 % )
+Total RAM Blocks : 160 / 553 ( 29 % )
+Total DSP Blocks : 3 / 112 ( 3 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1 / 6 ( 17 % )
+Total DLLs : 1 / 4 ( 25 % )

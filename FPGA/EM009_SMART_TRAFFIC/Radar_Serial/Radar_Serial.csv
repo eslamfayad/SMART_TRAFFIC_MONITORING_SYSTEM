@@ -1,0 +1,21 @@
+# system info Radar_Serial on 2022.03.20.09:17:46
+system_info:
+name,value
+DEVICE,5CSEBA6U23I7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1647760665
+#
+#
+# Files generated for Radar_Serial on 2022.03.20.09:17:46
+files:
+filepath,kind,attributes,module,is_top
+simulation/Radar_Serial.vhd,VHDL,,Radar_Serial,true
+simulation/submodules/altera_reset_controller.v,VERILOG,,altera_reset_controller,false
+simulation/submodules/altera_reset_synchronizer.v,VERILOG,,altera_reset_controller,false
+simulation/submodules/altera_reset_controller.sdc,SDC,,altera_reset_controller,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+Radar_Serial.rs232_0,Radar_Serial_rs232_0
+Radar_Serial.rst_controller,altera_reset_controller

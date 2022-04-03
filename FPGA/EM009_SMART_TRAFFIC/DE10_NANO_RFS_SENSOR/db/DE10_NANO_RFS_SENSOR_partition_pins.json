@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LSENSOR_SCL",
+					"strict" : false
+				},
+				{
+					"name" : "LSENSOR_SDA",
+					"strict" : false
+				},
+				{
+					"name" : "MPU_SCL_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "MPU_SDA_SDI",
+					"strict" : false
+				},
+				{
+					"name" : "RH_TEMP_I2C_SCL",
+					"strict" : false
+				},
+				{
+					"name" : "RH_TEMP_I2C_SDA",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_CLK1_50",
+					"strict" : false
+				},
+				{
+					"name" : "MPU_INT",
+					"strict" : false
+				},
+				{
+					"name" : "LSENSOR_INT",
+					"strict" : false
+				},
+				{
+					"name" : "RH_TEMP_DRDY_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1166 @@
+Flow report for Eslam_First_Fpga
+Sun Mar 27 14:06:06 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Sun Mar 27 14:06:06 2022           ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                   ; Eslam_First_Fpga                                ;
+; Top-level Entity Name           ; Eslam_First_Fpga_HDL                            ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEBA6U23I7                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 6,661 / 41,910 ( 16 % )                         ;
+; Total registers                 ; 10626                                           ;
+; Total pins                      ; 235 / 314 ( 75 % )                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 1,150,046 / 5,662,720 ( 20 % )                  ;
+; Total DSP Blocks                ; 3 / 112 ( 3 % )                                 ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 1 / 6 ( 17 % )                                  ;
+; Total DLLs                      ; 1 / 4 ( 25 % )                                  ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/08/2022 03:00:38 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Eslam_First_Fpga    ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                           ;
++-------------------------------------+-----------------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                     ; Value                                               ; Default Value ; Entity Name ; Section Id       ;
++-------------------------------------+-----------------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID               ; 105658699915458.164670123845488                     ; --            ; --          ; --               ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                                ; --            ; --          ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                              ; <None>        ; --          ; --               ;
+; EDA_TIME_SCALE                      ; 1 ps                                                ; --            ; --          ; eda_simulation   ;
+; ENABLE_SIGNALTAP                    ; On                                                  ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP              ; 100                                                 ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP              ; -40                                                 ; --            ; --          ; --               ;
+; MISC_FILE                           ; pll.cmp                                             ; --            ; --          ; --               ;
+; MISC_FILE                           ; pll_sim/pll.vho                                     ; --            ; --          ; --               ;
+; NUM_PARALLEL_PROCESSORS             ; All                                                 ; --            ; --          ; --               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)              ; --            ; --          ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)              ; --            ; --          ; Top              ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)              ; --            ; --          ; Top              ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                 ; --            ; --          ; --               ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW               ; --            ; --          ; --               ;
+; SLD_FILE                            ; db/stp1_auto_stripped.stp                           ; --            ; --          ; --               ;
+; SLD_NODE_CREATOR_ID                 ; 110                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_BLOCK_TYPE=AUTO                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                      ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INCREMENTAL_ROUTING=1                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_PIPELINE=0                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_PIPELINE=0                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_COUNTER_PIPELINE=0                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=64                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=64                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=4                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=4                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_BITS=4                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=00000000000000000000000000000000 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=32                        ; --            ; --          ; auto_signaltap_0 ;
+; SPD_FILE                            ; pll.spd                                             ; --            ; --          ; --               ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                  ; --            ; --          ; --               ;
+; USE_SIGNALTAP_FILE                  ; stp1.stp                                            ; --            ; --          ; --               ;
++-------------------------------------+-----------------------------------------------------+---------------+-------------+------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4837 MB             ; 00:00:22                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4837 MB             ; 00:00:22                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4837 MB             ; 00:00:22                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4837 MB             ; 00:00:24                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4837 MB             ; 00:00:22                           ;
+; Analysis & Synthesis   ; 00:00:28     ; 1.3                     ; 4903 MB             ; 00:00:56                           ;
+; Analysis & Synthesis   ; 00:00:28     ; 1.0                     ; 4895 MB             ; 00:00:46                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4745 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:56     ; 1.1                     ; 7087 MB             ; 00:02:50                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4836 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:12     ; 1.2                     ; 5317 MB             ; 00:00:14                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4842 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:25     ; 1.0                     ; 4904 MB             ; 00:00:49                           ;
+; Partition Merge        ; 00:00:03     ; 1.0                     ; 4915 MB             ; 00:00:03                           ;
+; Fitter                 ; 00:00:30     ; 1.0                     ; 6755 MB             ; 00:00:54                           ;
+; Assembler              ; 00:00:06     ; 1.0                     ; 4836 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:12     ; 1.4                     ; 5322 MB             ; 00:00:16                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4844 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:24     ; 1.0                     ; 4930 MB             ; 00:00:49                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:50     ; 1.1                     ; 7092 MB             ; 00:02:40                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4834 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:08     ; 1.3                     ; 5319 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4844 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:25     ; 1.0                     ; 4928 MB             ; 00:01:02                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:49     ; 1.1                     ; 7087 MB             ; 00:02:38                           ;
+; Assembler              ; 00:00:06     ; 1.0                     ; 4837 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5319 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4843 MB             ; 00:00:03                           ;
+; Analysis & Elaboration ; 00:00:25     ; 1.0                     ; 4884 MB             ; 00:01:02                           ;
+; Analysis & Elaboration ; 00:00:24     ; 1.0                     ; 4883 MB             ; 00:00:48                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4843 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:25     ; 1.0                     ; 4900 MB             ; 00:00:48                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:52     ; 1.1                     ; 7087 MB             ; 00:02:54                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4835 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5315 MB             ; 00:00:10                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4841 MB             ; 00:00:03                           ;
+; Analysis & Elaboration ; 00:00:24     ; 1.0                     ; 4882 MB             ; 00:00:50                           ;
+; Analysis & Synthesis   ; 00:00:25     ; 1.0                     ; 4929 MB             ; 00:00:47                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:52     ; 1.1                     ; 7096 MB             ; 00:02:46                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4837 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5318 MB             ; 00:00:10                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4842 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:24     ; 1.0                     ; 4932 MB             ; 00:00:49                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:48     ; 1.1                     ; 7087 MB             ; 00:02:33                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4835 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5318 MB             ; 00:00:10                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4842 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:25     ; 1.0                     ; 4931 MB             ; 00:01:03                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:50     ; 1.1                     ; 7124 MB             ; 00:02:40                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4837 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5319 MB             ; 00:00:10                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4841 MB             ; 00:00:03                           ;
+; Analysis & Elaboration ; 00:00:11     ; 1.0                     ; 4839 MB             ; 00:00:23                           ;
+; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 4840 MB             ; 00:00:22                           ;
+; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 4839 MB             ; 00:00:22                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4839 MB             ; 00:00:22                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4839 MB             ; 00:00:21                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4839 MB             ; 00:00:22                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4839 MB             ; 00:00:21                           ;
+; Analysis & Elaboration ; 00:00:14     ; 1.0                     ; 4839 MB             ; 00:00:21                           ;
+; Analysis & Elaboration ; 00:00:15     ; 1.0                     ; 4839 MB             ; 00:00:23                           ;
+; Analysis & Elaboration ; 00:00:11     ; 1.0                     ; 4839 MB             ; 00:00:22                           ;
+; Analysis & Elaboration ; 00:00:11     ; 1.0                     ; 4839 MB             ; 00:00:21                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4839 MB             ; 00:00:21                           ;
+; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 4839 MB             ; 00:00:21                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4839 MB             ; 00:00:21                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4839 MB             ; 00:00:22                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4843 MB             ; 00:00:21                           ;
+; Analysis & Elaboration ; 00:00:24     ; 1.0                     ; 4881 MB             ; 00:00:48                           ;
+; Analysis & Elaboration ; 00:00:25     ; 1.0                     ; 4882 MB             ; 00:01:03                           ;
+; Analysis & Elaboration ; 00:00:25     ; 1.0                     ; 4883 MB             ; 00:00:49                           ;
+; Analysis & Elaboration ; 00:00:48     ; 1.0                     ; 4895 MB             ; 00:01:09                           ;
+; Analysis & Elaboration ; 00:00:48     ; 1.0                     ; 4894 MB             ; 00:01:08                           ;
+; Analysis & Synthesis   ; 00:00:45     ; 1.0                     ; 4939 MB             ; 00:01:14                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4748 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:01:36     ; 1.1                     ; 7086 MB             ; 00:05:15                           ;
+; Assembler              ; 00:00:10     ; 1.0                     ; 4840 MB             ; 00:00:10                           ;
+; Timing Analyzer        ; 00:00:13     ; 1.3                     ; 5318 MB             ; 00:00:16                           ;
+; EDA Netlist Writer     ; 00:00:05     ; 1.0                     ; 4844 MB             ; 00:00:05                           ;
+; Analysis & Synthesis   ; 00:00:44     ; 1.0                     ; 4946 MB             ; 00:01:07                           ;
+; Analysis & Synthesis   ; 00:00:44     ; 1.0                     ; 4905 MB             ; 00:01:54                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4748 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:01:32     ; 1.1                     ; 7093 MB             ; 00:04:45                           ;
+; Assembler              ; 00:00:11     ; 1.0                     ; 4840 MB             ; 00:00:11                           ;
+; Timing Analyzer        ; 00:00:14     ; 1.3                     ; 5318 MB             ; 00:00:17                           ;
+; EDA Netlist Writer     ; 00:00:05     ; 1.0                     ; 4841 MB             ; 00:00:05                           ;
+; Analysis & Synthesis   ; 00:00:37     ; 1.0                     ; 4943 MB             ; 00:01:11                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4748 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:01:20     ; 1.1                     ; 7090 MB             ; 00:04:07                           ;
+; Assembler              ; 00:00:11     ; 1.0                     ; 4838 MB             ; 00:00:10                           ;
+; Timing Analyzer        ; 00:00:13     ; 1.3                     ; 5322 MB             ; 00:00:16                           ;
+; EDA Netlist Writer     ; 00:00:05     ; 1.0                     ; 4841 MB             ; 00:00:05                           ;
+; Analysis & Synthesis   ; 00:00:40     ; 1.0                     ; 4941 MB             ; 00:01:14                           ;
+; Analysis & Synthesis   ; 00:00:11     ; 1.0                     ; 4837 MB             ; 00:00:22                           ;
+; Analysis & Synthesis   ; 00:00:27     ; 1.0                     ; 4928 MB             ; 00:01:08                           ;
+; Analysis & Synthesis   ; 00:00:24     ; 1.0                     ; 4896 MB             ; 00:00:46                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:50     ; 1.1                     ; 7094 MB             ; 00:02:34                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4834 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5318 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4845 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4842 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:25     ; 1.0                     ; 4927 MB             ; 00:00:48                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:52     ; 1.1                     ; 7101 MB             ; 00:02:48                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4838 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5319 MB             ; 00:00:10                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4844 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:25     ; 1.0                     ; 4905 MB             ; 00:00:49                           ;
+; Partition Merge        ; 00:00:03     ; 1.0                     ; 4912 MB             ; 00:00:03                           ;
+; Fitter                 ; 00:00:29     ; 1.0                     ; 6768 MB             ; 00:00:55                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4834 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:13     ; 1.5                     ; 5324 MB             ; 00:00:17                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4845 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:25     ; 1.0                     ; 4931 MB             ; 00:00:47                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:50     ; 1.1                     ; 7093 MB             ; 00:02:39                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4835 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5318 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4842 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:24     ; 1.0                     ; 4928 MB             ; 00:00:47                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:48     ; 1.1                     ; 7094 MB             ; 00:02:30                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4833 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5320 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4843 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:24     ; 1.0                     ; 4930 MB             ; 00:00:46                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:54     ; 1.1                     ; 7094 MB             ; 00:02:57                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4835 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5320 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4843 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:24     ; 1.0                     ; 4929 MB             ; 00:00:46                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:51     ; 1.1                     ; 7098 MB             ; 00:02:44                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4836 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5319 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4846 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:24     ; 1.0                     ; 4935 MB             ; 00:00:45                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:51     ; 1.1                     ; 7099 MB             ; 00:02:41                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4839 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5318 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4843 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4839 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:25     ; 1.0                     ; 4964 MB             ; 00:01:02                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:50     ; 1.1                     ; 7095 MB             ; 00:02:39                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4837 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.4                     ; 5321 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4847 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:25     ; 1.0                     ; 4937 MB             ; 00:00:48                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:50     ; 1.1                     ; 7091 MB             ; 00:02:39                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4838 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5322 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4845 MB             ; 00:00:04                           ;
+; Analysis & Synthesis   ; 00:00:24     ; 1.0                     ; 4932 MB             ; 00:00:46                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:52     ; 1.1                     ; 7098 MB             ; 00:02:44                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4836 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:09     ; 1.3                     ; 5320 MB             ; 00:00:11                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4846 MB             ; 00:00:03                           ;
+; Analysis & Synthesis   ; 00:00:29     ; 1.2                     ; 4899 MB             ; 00:00:55                           ;
+; Analysis & Synthesis   ; 00:00:24     ; 1.0                     ; 4924 MB             ; 00:00:47                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4731 MB             ; 00:00:01                           ;
+; Fitter                 ; 00:00:50     ; 1.1                     ; 7052 MB             ; 00:02:41                           ;
+; Assembler              ; 00:00:07     ; 1.0                     ; 4836 MB             ; 00:00:07                           ;
+; Timing Analyzer        ; 00:00:08     ; 1.3                     ; 5272 MB             ; 00:00:10                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4739 MB             ; 00:00:03                           ;
+; EDA Netlist Writer     ; 00:00:01     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4729 MB             ; 00:00:02                           ;
+; EDA Netlist Writer     ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
+; EDA Netlist Writer     ; 00:00:02     ; 1.0                     ; 4729 MB             ; 00:00:02                           ;
+; Analysis & Synthesis   ; 00:00:23     ; 1.0                     ; 4894 MB             ; 00:00:43                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4837 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4834 MB             ; 00:00:19                           ;
+; Analysis & Synthesis   ; 00:00:08     ; 1.0                     ; 4834 MB             ; 00:00:19                           ;
+; Analysis & Synthesis   ; 00:00:08     ; 1.0                     ; 4834 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4838 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4835 MB             ; 00:00:19                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4837 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4834 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:08     ; 1.0                     ; 4834 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4834 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4834 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4838 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:22     ; 1.0                     ; 4890 MB             ; 00:00:44                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4840 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:23     ; 1.0                     ; 4922 MB             ; 00:00:44                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4859 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4857 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4865 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4862 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:19     ; 1.0                     ; 4998 MB             ; 00:00:29                           ;
+; Analysis & Synthesis   ; 00:00:39     ; 1.0                     ; 5099 MB             ; 00:01:01                           ;
+; Analysis & Synthesis   ; 00:00:33     ; 1.0                     ; 5050 MB             ; 00:00:54                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4756 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:01:52     ; 1.3                     ; 7138 MB             ; 00:09:00                           ;
+; Assembler              ; 00:00:08     ; 1.0                     ; 4904 MB             ; 00:00:08                           ;
+; Timing Analyzer        ; 00:00:12     ; 2.6                     ; 5377 MB             ; 00:00:26                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4813 MB             ; 00:00:04                           ;
+; Analysis & Synthesis   ; 00:00:32     ; 1.0                     ; 5054 MB             ; 00:01:05                           ;
+; Partition Merge        ; 00:00:04     ; 1.0                     ; 5036 MB             ; 00:00:05                           ;
+; Fitter                 ; 00:00:48     ; 1.4                     ; 6903 MB             ; 00:01:28                           ;
+; Assembler              ; 00:00:08     ; 1.0                     ; 4897 MB             ; 00:00:08                           ;
+; Timing Analyzer        ; 00:00:12     ; 2.5                     ; 5372 MB             ; 00:00:25                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4807 MB             ; 00:00:04                           ;
+; Analysis & Elaboration ; 00:00:31     ; 1.0                     ; 5044 MB             ; 00:00:51                           ;
+; Analysis & Elaboration ; 00:00:29     ; 1.0                     ; 5036 MB             ; 00:00:49                           ;
+; Analysis & Synthesis   ; 00:00:39     ; 1.0                     ; 5094 MB             ; 00:01:01                           ;
+; Analysis & Synthesis   ; 00:00:29     ; 1.0                     ; 5033 MB             ; 00:00:50                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4876 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4873 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:37     ; 1.0                     ; 5085 MB             ; 00:00:58                           ;
+; Analysis & Synthesis   ; 00:00:31     ; 1.0                     ; 5046 MB             ; 00:00:51                           ;
+; Analysis & Synthesis   ; 00:00:38     ; 1.0                     ; 5086 MB             ; 00:00:59                           ;
+; Analysis & Synthesis   ; 00:00:38     ; 1.0                     ; 5086 MB             ; 00:00:59                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4763 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:03:23     ; 1.2                     ; 7179 MB             ; 00:13:19                           ;
+; Analysis & Synthesis   ; 00:01:01     ; 1.0                     ; 5091 MB             ; 00:01:30                           ;
+; Partition Merge        ; 00:00:03     ; 1.0                     ; 4759 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:03:41     ; 1.2                     ; 7224 MB             ; 00:15:00                           ;
+; Analysis & Synthesis   ; 00:00:18     ; 1.0                     ; 4923 MB             ; 00:00:34                           ;
+; Analysis & Synthesis   ; 00:00:16     ; 1.0                     ; 4875 MB             ; 00:00:33                           ;
+; Analysis & Synthesis   ; 00:00:17     ; 1.0                     ; 4912 MB             ; 00:00:34                           ;
+; Analysis & Synthesis   ; 00:00:16     ; 1.0                     ; 4877 MB             ; 00:00:34                           ;
+; Analysis & Synthesis   ; 00:00:17     ; 1.0                     ; 4917 MB             ; 00:00:35                           ;
+; Analysis & Synthesis   ; 00:00:17     ; 1.0                     ; 4919 MB             ; 00:00:35                           ;
+; Analysis & Synthesis   ; 00:01:01     ; 1.0                     ; 5082 MB             ; 00:01:32                           ;
+; Partition Merge        ; 00:00:03     ; 1.0                     ; 4760 MB             ; 00:00:03                           ;
+; Fitter                 ; 00:05:40     ; 1.1                     ; 7194 MB             ; 00:16:31                           ;
+; Assembler              ; 00:00:15     ; 1.0                     ; 4904 MB             ; 00:00:14                           ;
+; Timing Analyzer        ; 00:00:21     ; 2.4                     ; 5367 MB             ; 00:00:44                           ;
+; EDA Netlist Writer     ; 00:00:06     ; 1.0                     ; 4810 MB             ; 00:00:06                           ;
+; Analysis & Synthesis   ; 00:01:01     ; 1.1                     ; 5057 MB             ; 00:01:37                           ;
+; Partition Merge        ; 00:00:09     ; 1.0                     ; 5053 MB             ; 00:00:09                           ;
+; Fitter                 ; 00:00:11     ; 1.0                     ; 5112 MB             ; 00:00:11                           ;
+; Analysis & Synthesis   ; 00:01:02     ; 1.1                     ; 5061 MB             ; 00:01:36                           ;
+; Partition Merge        ; 00:00:09     ; 1.0                     ; 5053 MB             ; 00:00:08                           ;
+; Fitter                 ; 00:00:11     ; 1.0                     ; 5111 MB             ; 00:00:10                           ;
+; Analysis & Synthesis   ; 00:01:02     ; 1.1                     ; 5064 MB             ; 00:01:37                           ;
+; Partition Merge        ; 00:00:08     ; 1.0                     ; 5050 MB             ; 00:00:08                           ;
+; Fitter                 ; 00:00:10     ; 1.0                     ; 5111 MB             ; 00:00:10                           ;
+; Analysis & Synthesis   ; 00:00:54     ; 1.0                     ; 5052 MB             ; 00:01:25                           ;
+; Partition Merge        ; 00:00:07     ; 1.0                     ; 5027 MB             ; 00:00:07                           ;
+; Fitter                 ; 00:00:47     ; 1.0                     ; 6356 MB             ; 00:01:15                           ;
+; Assembler              ; 00:00:14     ; 1.0                     ; 4903 MB             ; 00:00:14                           ;
+; Timing Analyzer        ; 00:00:28     ; 2.9                     ; 5370 MB             ; 00:01:13                           ;
+; EDA Netlist Writer     ; 00:00:06     ; 1.0                     ; 4811 MB             ; 00:00:06                           ;
+; Analysis & Synthesis   ; 00:00:40     ; 1.0                     ; 5098 MB             ; 00:01:01                           ;
+; Analysis & Synthesis   ; 00:00:18     ; 1.0                     ; 4869 MB             ; 00:00:25                           ;
+; Analysis & Synthesis   ; 00:00:23     ; 1.0                     ; 5016 MB             ; 00:00:34                           ;
+; Analysis & Synthesis   ; 00:00:41     ; 1.0                     ; 5103 MB             ; 00:01:04                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4760 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:02:11     ; 1.2                     ; 7155 MB             ; 00:10:18                           ;
+; Analysis & Synthesis   ; 00:00:11     ; 1.0                     ; 4877 MB             ; 00:00:22                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4866 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:11     ; 1.0                     ; 4866 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4866 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4866 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4866 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4866 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:11     ; 1.0                     ; 4924 MB             ; 00:00:22                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4866 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:11     ; 1.0                     ; 4918 MB             ; 00:00:22                           ;
+; Analysis & Synthesis   ; 00:00:11     ; 1.0                     ; 4901 MB             ; 00:00:22                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4875 MB             ; 00:00:22                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4873 MB             ; 00:00:19                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4916 MB             ; 00:00:22                           ;
+; Analysis & Synthesis   ; 00:00:40     ; 1.0                     ; 5082 MB             ; 00:01:02                           ;
+; Analysis & Synthesis   ; 00:00:12     ; 1.0                     ; 4945 MB             ; 00:00:24                           ;
+; Analysis & Synthesis   ; 00:00:39     ; 1.0                     ; 5086 MB             ; 00:01:02                           ;
+; Partition Merge        ; 00:00:03     ; 1.0                     ; 4762 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:02:06     ; 1.2                     ; 7156 MB             ; 00:09:58                           ;
+; Analysis & Synthesis   ; 00:00:33     ; 1.0                     ; 5053 MB             ; 00:00:55                           ;
+; Partition Merge        ; 00:00:03     ; 1.0                     ; 4925 MB             ; 00:00:03                           ;
+; Fitter                 ; 00:00:52     ; 1.3                     ; 7305 MB             ; 00:02:29                           ;
+; Assembler              ; 00:00:09     ; 1.0                     ; 4902 MB             ; 00:00:08                           ;
+; Timing Analyzer        ; 00:00:12     ; 2.4                     ; 5365 MB             ; 00:00:27                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4802 MB             ; 00:00:04                           ;
+; Analysis & Synthesis   ; 00:00:40     ; 1.0                     ; 5095 MB             ; 00:01:00                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4760 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:02:03     ; 1.2                     ; 7164 MB             ; 00:09:55                           ;
+; Assembler              ; 00:00:09     ; 1.0                     ; 4906 MB             ; 00:00:08                           ;
+; Timing Analyzer        ; 00:00:12     ; 2.5                     ; 5365 MB             ; 00:00:27                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4807 MB             ; 00:00:04                           ;
+; Analysis & Synthesis   ; 00:00:11     ; 1.0                     ; 4886 MB             ; 00:00:21                           ;
+; Analysis & Synthesis   ; 00:00:10     ; 1.0                     ; 4869 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:09     ; 1.0                     ; 4867 MB             ; 00:00:20                           ;
+; Analysis & Synthesis   ; 00:00:39     ; 1.0                     ; 5087 MB             ; 00:01:02                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4760 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:01:50     ; 1.3                     ; 7160 MB             ; 00:08:52                           ;
+; Assembler              ; 00:00:09     ; 1.0                     ; 4902 MB             ; 00:00:08                           ;
+; Timing Analyzer        ; 00:00:13     ; 2.5                     ; 5366 MB             ; 00:00:28                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4809 MB             ; 00:00:04                           ;
+; Analysis & Synthesis   ; 00:00:38     ; 1.0                     ; 5095 MB             ; 00:01:01                           ;
+; Analysis & Synthesis   ; 00:00:34     ; 1.0                     ; 5046 MB             ; 00:00:57                           ;
+; Partition Merge        ; 00:00:01     ; 1.0                     ; 4762 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:02:02     ; 1.2                     ; 7192 MB             ; 00:08:41                           ;
+; Assembler              ; 00:00:08     ; 1.0                     ; 4901 MB             ; 00:00:09                           ;
+; Timing Analyzer        ; 00:00:13     ; 2.5                     ; 5368 MB             ; 00:00:28                           ;
+; EDA Netlist Writer     ; 00:00:03     ; 1.0                     ; 4809 MB             ; 00:00:04                           ;
+; Analysis & Synthesis   ; 00:00:39     ; 1.0                     ; 5094 MB             ; 00:01:02                           ;
+; Partition Merge        ; 00:00:02     ; 1.0                     ; 4760 MB             ; 00:00:02                           ;
+; Fitter                 ; 00:02:01     ; 1.3                     ; 7158 MB             ; 00:08:49                           ;
+; Assembler              ; 00:00:09     ; 1.0                     ; 4905 MB             ; 00:00:09                           ;
+; Timing Analyzer        ; 00:00:13     ; 2.5                     ; 5366 MB             ; 00:00:29                           ;
+; EDA Netlist Writer     ; 00:00:04     ; 1.0                     ; 4808 MB             ; 00:00:04                           ;
+; Analysis & Synthesis   ; 00:00:17     ; 1.0                     ; 4912 MB             ; 00:00:29                           ;
+; Analysis & Synthesis   ; 00:01:24     ; 2.5                     ; 5411 MB             ; 00:03:30                           ;
+; Analysis & Synthesis   ; 00:01:23     ; 2.5                     ; 5426 MB             ; 00:03:29                           ;
+; Analysis & Synthesis   ; 00:01:21     ; 2.5                     ; 5421 MB             ; 00:03:38                           ;
+; Partition Merge        ; 00:00:08     ; 1.0                     ; 4820 MB             ; 00:00:08                           ;
+; Fitter                 ; 00:03:18     ; 1.4                     ; 8095 MB             ; 00:10:27                           ;
+; Assembler              ; 00:00:14     ; 1.0                     ; 4989 MB             ; 00:00:14                           ;
+; Timing Analyzer        ; 00:00:56     ; 1.7                     ; 6131 MB             ; 00:01:30                           ;
+; EDA Netlist Writer     ; 00:00:08     ; 1.0                     ; 4917 MB             ; 00:00:08                           ;
+; Analysis & Synthesis   ; 00:01:37     ; 2.3                     ; 5548 MB             ; 00:03:38                           ;
+; Analysis & Synthesis   ; 00:01:04     ; 1.0                     ; 5476 MB             ; 00:01:25                           ;
+; Partition Merge        ; 00:00:13     ; 1.0                     ; 4852 MB             ; 00:00:13                           ;
+; Fitter                 ; 00:04:32     ; 1.4                     ; 8279 MB             ; 00:15:40                           ;
+; Assembler              ; 00:00:15     ; 1.0                     ; 5035 MB             ; 00:00:15                           ;
+; Timing Analyzer        ; 00:01:01     ; 1.9                     ; 6257 MB             ; 00:01:46                           ;
+; EDA Netlist Writer     ; 00:00:09     ; 1.0                     ; 5076 MB             ; 00:00:09                           ;
+; Analysis & Synthesis   ; 00:00:21     ; 1.0                     ; 4971 MB             ; 00:00:34                           ;
+; Analysis & Synthesis   ; 00:01:36     ; 2.3                     ; 5525 MB             ; 00:03:53                           ;
+; Partition Merge        ; 00:00:14     ; 1.0                     ; 4857 MB             ; 00:00:13                           ;
+; Fitter                 ; 00:04:15     ; 1.4                     ; 8257 MB             ; 00:15:08                           ;
+; Assembler              ; 00:00:16     ; 1.0                     ; 5031 MB             ; 00:00:15                           ;
+; Timing Analyzer        ; 00:01:02     ; 1.9                     ; 6259 MB             ; 00:01:49                           ;
+; EDA Netlist Writer     ; 00:00:09     ; 1.0                     ; 5074 MB             ; 00:00:09                           ;
+; Total                  ; 02:20:26     ; --                      ; --                  ; 05:59:11                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis   ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Partition Merge        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                 ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler              ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer        ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-LMP7SPS  ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_cdb --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on --recompile=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_cdb --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on --recompile=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --vector_source=D:/INNOVATE_FPGA/FPGA_PROJECTS/FIRST_Fpga/Waveform.vwf --testbench_file=D:/INNOVATE_FPGA/FPGA_PROJECTS/FIRST_Fpga/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/INNOVATE_FPGA/FPGA_PROJECTS/FIRST_Fpga/simulation/qsim/ Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --vector_source=D:/INNOVATE_FPGA/FPGA_PROJECTS/FIRST_Fpga/Waveform.vwf --testbench_file=D:/INNOVATE_FPGA/FPGA_PROJECTS/FIRST_Fpga/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/INNOVATE_FPGA/FPGA_PROJECTS/FIRST_Fpga/simulation/qsim/ Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_cdb --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on --recompile=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_cdb --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on --recompile=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_cdb --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on --recompile=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_cdb --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on --recompile=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_cdb --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on --recompile=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --recompile=on
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_map --read_settings_files=on --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_asm --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_sta Eslam_First_Fpga -c Eslam_First_Fpga
+quartus_eda --read_settings_files=off --write_settings_files=off Eslam_First_Fpga -c Eslam_First_Fpga
+
+
+

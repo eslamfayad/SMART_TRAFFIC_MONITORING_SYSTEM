@@ -1,0 +1,73 @@
+Info: Starting: Create simulation model
+Info: qsys-generate D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial\simulation --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading EM009_SMART_TRAFFIC/Radar_Serial.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Radar_Serial: Generating Radar_Serial "Radar_Serial" for SIM_VHDL
+Info: rs232_0: Starting Generation of RS232 UART
+Warning: rs232_0: No files generated for fileset SIM_VHDL
+Info: rs232_0: "Radar_Serial" instantiated altera_up_avalon_rs232 "rs232_0"
+Info: rst_controller: "Radar_Serial" instantiated altera_reset_controller "rst_controller"
+Info: Radar_Serial: Done "Radar_Serial" with 3 modules, 4 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial\Radar_Serial.spd --output-directory=D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/Radar_Serial/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial\Radar_Serial.spd --output-directory=D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/Radar_Serial/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/Radar_Serial/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/Radar_Serial/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/Radar_Serial/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/Radar_Serial/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/INNOVATE_FPGA/FPGA_PROJECTS/EM009_SMART_TRAFFIC/Radar_Serial/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial.qsys --block-symbol-file --output-directory=D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading EM009_SMART_TRAFFIC/Radar_Serial.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial.qsys --synthesis=VHDL --output-directory=D:\INNOVATE_FPGA\FPGA_PROJECTS\EM009_SMART_TRAFFIC\Radar_Serial\synthesis --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading EM009_SMART_TRAFFIC/Radar_Serial.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Radar_Serial: Generating Radar_Serial "Radar_Serial" for QUARTUS_SYNTH
+Info: rs232_0: Starting Generation of RS232 UART
+Info: rs232_0: "Radar_Serial" instantiated altera_up_avalon_rs232 "rs232_0"
+Info: rst_controller: "Radar_Serial" instantiated altera_reset_controller "rst_controller"
+Info: Radar_Serial: Done "Radar_Serial" with 3 modules, 9 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
