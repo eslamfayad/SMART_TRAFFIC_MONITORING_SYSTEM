@@ -335,11 +335,3 @@ https://www.arduino.cc/
 EM009 GIT HUB LINK 
 
 https://github.com/eslamfayad/SMART_TRAFFIC_MONITORING_SYSTEM
-
-
-FAQ
-
-CONTACT US
-
-AmericasAPJEMEAGreater China
-Privacy．Copyright © 2021 InnovateFPGA. Created by Terasic.
